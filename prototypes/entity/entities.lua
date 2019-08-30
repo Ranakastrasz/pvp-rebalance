@@ -2,6 +2,28 @@
 -- Land mine arming time increased. It is more difficult to drop mines under someone unless they let it happen.
 -- Bots can no longer be repaired. Actually they heal for FREE in the roboport; this stops the suicide cycle of bots running out to fix bots, getting hurt, and dragging in more bots.
 
+-- Player given 50% explosive and fire resistance innate
+-- This establishes 3 major classes of weapons: Anti personnel (piercing), Anti vehicle (explosion) and anti biter(fire).
+-- Players and vehicles have high fire resistance
+-- Only players have high explosive resistance
+
+-- innate resists
+data.raw["character"]["character"].resistances = { {type = "explosion", decrease = 0, percent = 30}, {type = "fire", decrease=0, percent = 50}}
+
+-- mining time 
+data.raw["character-corpse"]["character-corpse"].minable.mining_time = 1 
+
+-- removes "nonflammable" property from player.
+function tablefind(tab,el)
+    for index, value in pairs(tab) do
+		if value == el then
+			return index
+		end
+	end
+end
+table.remove(data.raw["character"]["character"].flags, tablefind(data.raw["character"]["character"].flags, "non-flammable")) 
+
+data.raw["wall"]["stone-wall"].resistances[4] = {type = "fire", decrease = 50, percent = 50} -- fire resist
 
 data.raw["land-mine"]["land-mine"].timeout = 300 --arming time from 2 seconds to 5 seconds
 data.raw["land-mine"]["land-mine"].action.action_delivery.source_effects[1].action.action_delivery.target_effects[1].damage.amount = 150 -- + 20% research, down from 300/no research

@@ -1,4 +1,8 @@
--- all armors have laser defense added. Light armor is "demo_armor".
+-- all armors have laser defense added.
+
+ table.insert(data.raw["armor"]["light-armor"].resistances, {type = "laser", decrease = 2, percent = 15})
+
+
 data.raw["armor"]["heavy-armor"].resistances[2] = {type = "explosion", decrease = 5, percent = 30}
 data.raw["armor"]["modular-armor"].resistances[3] =  {type = "explosion", decrease = 8, percent = 40}
 data.raw["armor"]["power-armor"].resistances[3] =  {type = "explosion", decrease = 12, percent = 50}

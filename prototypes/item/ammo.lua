@@ -4,6 +4,9 @@
 -- Shotgun ammo reduced from 10 to 6. This is sad but the shotgun is still a very resource efficient ammo.
 -- Shotgun ammo range moderately reduced from 15 to 12. You'll be running so much faster with the shotgun you won't care.
 
+data.raw["ammo"]["firearm-magazine"].magazine_size=12
+data.raw["ammo"]["firearm-magazine"].stack_size=50
+
 data.raw["ammo"]["piercing-rounds-magazine"].magazine_size = 12
 data.raw["ammo"]["piercing-rounds-magazine"].stack_size= 50
 data.raw["ammo"]["uranium-rounds-magazine"].magazine_size = 12
