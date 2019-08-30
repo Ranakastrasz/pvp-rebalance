@@ -1,0 +1,7 @@
+-- table.insert(data.raw["technology"]["grenade-damage-1"].effects, {type = "ammo-damage", ammo_category = "landmine", modifier = 0.2} )
+-- table.insert(data.raw["technology"]["grenade-damage-2"].effects, {type = "ammo-damage", ammo_category = "landmine", modifier = 0.2} )
+-- table.insert(data.raw["technology"]["grenade-damage-3"].effects, {type = "ammo-damage", ammo_category = "landmine", modifier = 0.2} )
+-- table.insert(data.raw["technology"]["grenade-damage-4"].effects, {type = "ammo-damage", ammo_category = "landmine", modifier = 0.2} )
+-- table.insert(data.raw["technology"]["grenade-damage-5"].effects, {type = "ammo-damage", ammo_category = "landmine", modifier = 0.2} )
+-- table.insert(data.raw["technology"]["grenade-damage-6"].effects, {type = "ammo-damage", ammo_category = "landmine", modifier = 0.2} )
+-- table.insert(data.raw["technology"]["grenade-damage-7"].effects, {type = "ammo-damage", ammo_category = "landmine", modifier = 0.2} )

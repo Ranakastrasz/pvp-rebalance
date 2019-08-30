@@ -1,0 +1,1 @@
+data.raw["ammo-turret"]["gun-turret"].attack_parameters.range=20

@@ -1,0 +1,9 @@
+{
+    "name": "pvp-rebalance",
+    "version": "0.0.10",
+    "title": "PvP Rebalance",
+    "author": "Bobucles", 
+    "factorio_version": "0.16",
+    "dependencies": ["base >= 0.16"],
+    "description": "A wide collection of weapon, armor and equipment balance changes oriented towards PvP and (to a lesser extent) PvE."
+}
