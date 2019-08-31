@@ -9,9 +9,9 @@
 --table.insert(data.raw["night-vision-equipment"].energy_source, {buffer_capacity="1GJ"})
 data.raw["night-vision-equipment"]["night-vision-equipment"].energy_source.buffer_capacity= "1200kJ"
 data.raw["night-vision-equipment"]["night-vision-equipment"].energy_source.input_flow_limit= "100kW"
-data.raw["solar-panel-equipment"]["solar-panel-equipment"].shape = {width=2, height=2, type="full"}
-data.raw["solar-panel-equipment"]["solar-panel-equipment"].power = "60kW"
-data.raw["solar-panel-equipment"]["solar-panel-equipment"].sprite = {filename = "__pvp-rebalance__/graphics/equipment/modsolar.png", width=64, height=64, priority = "medium"}
+--data.raw["solar-panel-equipment"]["solar-panel-equipment"].shape = {width=2, height=2, type="full"}
+--data.raw["solar-panel-equipment"]["solar-panel-equipment"].power = "60kW"
+--data.raw["solar-panel-equipment"]["solar-panel-equipment"].sprite = {filename = "__pvp-rebalance__/graphics/equipment/modsolar.png", width=64, height=64, priority = "medium"}
 data.raw["roboport-equipment"]["personal-roboport-equipment"].construction_radius = 10 --down from 15
 data.raw["roboport-equipment"]["personal-roboport-equipment"].energy_source= { 
       type = "electric",

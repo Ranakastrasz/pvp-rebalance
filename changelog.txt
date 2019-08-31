@@ -1,4 +1,98 @@
 ---------------------------------------------------------------------------------------------------
+Version: Current
+Date: 8. 31. 2019
+  Bugfixes:
+  Info:
+  1 warning!:
+    - This mod is made as a standalone combat mod. It is untested with other combat mods and is likely to be incompatible if conflicts arise.
+  2 Weapons and Ammo:
+    - All standard projectile weapons have their stack size reduced to 50. Helps provisioning ammo be much less wasteful on multiplayer servers, gives decent ammo counts for PvP, and makes it much easier to load turrets with an appropriate(not 200!) amount of ammo.
+    - Machine Gun:
+      -- Gun magazine size increased to 12, effectively increasing the recipe yield by 20%. Ammo will go a little bit further now.
+      -- Uranium ammo damage reduced to 16 (from 24)
+      -- Gun turret range increased to 20 (from 18). It can no longer attacked by the machine gun from out of range.
+    - Shotgun:
+      -- Shotguns are now run+gun weapons for staying mobile.
+      -- Shotgun shells have less range (from ~16-20 to ~10-14)
+      -- Shotgun/Combat Shotgun Run speed is dramatically increased (from 60%/50% slow to 35%/25% slow).
+      -- Shotgun magazine size reduced to 4, effectively decreasing recipe yield by 60%. Shotgun ammo should feel like a limited resource now.
+      -- Piercing Shotgun Ammo changed to 12x10 damage (from 16x8). This considerably boosts low tier damage against armor but reduces damage scaling slightly.
+    - Tank:
+      -- Explosive tank shells have a minimum range(6). They are mostly safe except at extreme top speed and when enemies are point blank.
+      -- (REMOVED) Tank machine gun fires 33% faster, but damage bonus reduced to 50% (from 100%). Overall DPS unchanged.
+    - Fire:
+      -- Fire sticker debuff changed to 15/sec for 5 seconds, totalling 75 damage (down from 100*30 = 3000 damage, that's absurd!)
+      -- Tank flame thrower now applies fire debuff. Looks a little weird since it won't ignite enemies you shoot too far beyond.
+      -- Flame Turret consumes 6.0 fuel/second (up from 3.0). For reference a full storage tank holds 70 minutes of turret ammo.
+      -- Flame turret internal buffer reduced to 50 (from 100).
+    - Other:
+      -- Rocket launcher makes you immobile while firing.  
+      -- Land mines take 5 seconds to arm (up from 2). It is more difficult to mine underneath players and biters now.
+      -- Land Mine damage reduced to 150. Now benefits from Grenade research (20% per level).
+      -- Land Mine immobilize decreased to a 70% snare debuff.
+
+  3 Armor & Modules:
+    - All Armors given a laser defense rating, which scales with tier.
+    - Modular armor equipment grid changed to 4x6, room for 6 modules. (up from 4). Now allows pocket fusion with 2 modules.
+    - Power armor 1 equipment grid changed to 6x8, room for 12 modules (up from 9). Now allows pocket fusion with multiple exosuits.
+    -  (REMOVED) Pocket solar overhaul. Is now a 2x2 item that gives 60kW, representing a dramatic recipe cost reduction and 50% more strength per tile. It should be a decent entry level module now.
+    - Night Vision has internal energy storage of 120seconds, and can last the night without any extra power.
+    - Personal roboport (Mk1/Mk2) overhauled:
+    - Internal energy storage reduced to 5MJ/10MJ (down from 35MJ/35MJ). You can now freely remove them from armor without much penalty.
+    - Range reduced to 10/15 (from 15/20). This is a range reduction of 33%/25%, which will make your construction zone tighter and more efficient.
+    - Energy storage recharge rate changed to 2MW/4MW (from 3.5MW/3.5MW). Personal robos can always maintain their energy on battery power.
+    - Personal Laser Defense overhauled. Hits for 20 damage 2/second. Damage is boosted by laser research, (66 at lvl 7, 80 at lvl 8, etc.) 
+  4 Vehicles and resistances:
+    - Vehicle endurance overhaul. Percentage resistances have been changed with effective HP in mind, and flat resistances have generally been reduced.
+      -- Tank
+    - Main health reduced to 1500 (from 2000)
+    - 2500 EHP against physical damage (down from 5000). Can be scratched (barely!) by red ammo.
+    - Acid EHP 3750  (down from 4000). Higher resistance makes repair packs more effective.
+    - Explosion EHP 1760 (down from 6660). Tanks are weak against rockets, land mines and AP cannon shells!
+    - Explosive cannon shells have minimum range (are MOSTLY safe), and are mostly fire (anti biter) damage now. self damage reduced to 80 (from 90)
+    - Laser resistance added. EHP 3000 (up from 2000)
+    - Fire EHP 15000. Tanks are nearly immune to fire.  
+      -- Car
+    - Given minor resistances against all weapons, on par with heavy armor.
+    - Main health 450.
+    - 560 Physical EHP 
+    - 750 Explosion EHP  (surprisingly fragile!)
+    - 600 Acid EHP
+    - 1125 Fire EHP (up from 900)
+    - 692 Laser EHP
+      -- Player
+    - All players given 30% explosion and 50% fire resistance innate. This multiplies with any armor resistances and is to help facilitate damage types that are effective against armor and biters.
+    - All armors given laser resistance, which scales somewhat stronger than physical resistance.
+    - All armor explosion flat resistance dramatically reduced and percentage resistance increased
+    - EHP values are as follows
+    - armor     n/a  lt hvy mod  mk1  mk2
+    - explosion 250 312 357 384  416  500 before
+    - explosion 357 446 510 595  714  892 after
+    - laser     250 250 250 250  250  250 before
+    - laser     250 294 333 384  450  555 after
+    - fire      250 277 357 416  625  833 before
+    - fire      500 555 714 833 1250 1666 after
+  5 Other:
+    - Corpse mining time reduced to 1 (from 5). You can already quick loot a body by opening the inventory and ctrl-clicking it, so there's no reason for the other method to be so slow.
+    - The player can now catch on fire! It doesn't hurt too much (500EHP), you'll be fine.
+    - Wall and gate fire resistance reduced from 100% to 50/50%. this is a test to see how it works.
+  8 Known issues:
+    - Due to a strange glitch the personal laser defense lies about its attack speed buff. It is not boosted by research.
+    - Vehicles can not have stickers and are thus immune to slowdown capsule, land mine stun and being set on fire.
+    - Damaged robots mined by hand will stay damaged. They will auto repair the next time they dock at a roboport.
+  9 Future:
+    - Condense combat research? Place small arms into one topic, throwables into a second topic, launched into a third topic, etc.
+    - Cluster grenade initial blast damage (50?)
+    - Combat Robot overhaul (cheaper, faster, etc.)
+    - Cannon high tier scaling
+    - Grenade/capsule inventory reduction
+    - Further tweaks to combat oriented recipes.
+---------------------------------------------------------------------------------------------------
+Version: 17.1.1
+Date: 8. 31. 2019
+    -Removed Solar Panel buff, as it was a nerf after vanilla change.
+    
+---------------------------------------------------------------------------------------------------
 Version: 17.1.0
 Date: 8. 30. 2019
     -Updated for Factorio V17
